@@ -59,5 +59,5 @@ pipenv run test
 <br />
 
 ## ✏️ Authors <a name = "authors"></a>
-
-- [@vittoriopolverino](https://github.com/vittoriopolverino)
+- Made with ❤️  by [@vittoriopolverino](https://github.com/vittoriopolverino)
+️ 
