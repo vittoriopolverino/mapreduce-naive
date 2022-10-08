@@ -1,7 +1,7 @@
 name: main
 on: [push, pull_request]
 jobs:
-  python-black:
+  black:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -9,10 +9,39 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-          cache: 'pipenv '
 
       - run: |
           python -m pip install --upgrade pip
-          pip install black
+          pip install black==22.10.0
 
       - run: black --check .
+
+  flak8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+
+      - run: flake8 --max-line-length 88
+
+  isort:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - run: |
+          python -m pip install --upgrade pip
+          pip install isort
+
+      - run: isort . --check --profile black --filter-files

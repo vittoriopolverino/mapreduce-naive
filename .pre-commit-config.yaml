@@ -38,7 +38,7 @@ repos:
   - repo: local
     hooks:
       - id: tests
-        name: Unit Tests
+        name: Unit and Integration tests
         entry: pipenv run test
         language: python
         "types": [python]
