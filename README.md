@@ -15,6 +15,8 @@
 
 A naive Word Count implementation to better understand the **MapReduce** paradigm.
 
+<br />
+
 MapReduce is a programming model for processing and generating big data sets with a parallel, distributed algorithm on a cluster.
 
 The "MapReduce System" is usually composed of three functions (or steps):
@@ -27,29 +29,34 @@ The "MapReduce System" is usually composed of three functions (or steps):
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-To do
+Use the Pipfile to install packages in the virtualenv:
 
 ```
-pipenv install 
+pipenv install --dev
 ```
 
 <br />
 
-## 🎈 Usage <a name="usage"></a>
-
-To do
+## 💻 Usage <a name="usage"></a>
+Run the MapReduce example:
+```
+pipenv run wordcount
+```
 
 <br />
 
-## 🚀 Deployment <a name = "deployment"></a>
-
-To do
+## 🐛 Test <a name = "deployment"></a>
+Run Unit and Integration Tests
+```
+pipenv run test
+```
 
 <br />
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [Terraform](https://www.hashicorp.com/products/terraform) - IaC
+- [Pipenv](https://pipenv.pypa.io/en/latest/) | virtualenv and  packaging
+- [Pytest](https://docs.pytest.org/en/7.1.x/) | testing
 
 <br />
 
