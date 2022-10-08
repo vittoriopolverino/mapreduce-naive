@@ -1,6 +1,9 @@
-<h1 align="center">MapReduce Word Count</h1>
+## MapReduce Word Count
+A naive implementation to better understand the **MapReduce** paradigm.
 
-## 📝 Table of Contents
+<br />
+
+## 📜 Table of Contents
 
 - [About](#about)
 - [Getting Started](#getting_started)
@@ -12,8 +15,6 @@
 <br />
 
 ## 🧐 About <a name = "about"></a>
-A naive implementation to better understand the **MapReduce** paradigm.
-
 MapReduce is a programming model for processing and generating big data sets with a parallel, distributed algorithm on a cluster.
 The "MapReduce System" is usually composed of three functions (or steps):
 - **Map**: The map function, also referred to as the map task, processes a single key/value input pair and produces a set of intermediate key/value pairs.
