@@ -1,9 +1,13 @@
 import operator
+import os
 import time
 
+import config
 import word_count as wdc
 
 if __name__ == "__main__":
+    os.chdir(config.ROOT_DIR)
+
     with open("example.txt") as file:  # import data
         file_text = file.read()
 
