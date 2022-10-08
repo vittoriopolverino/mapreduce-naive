@@ -21,6 +21,8 @@ The "MapReduce System" is usually composed of three functions (or steps):
 **Shuffle**: The shuffle function transfer data from Mapper to Reducer. It is a mandatory operation for reducers to proceed their jobs further as the shuffling process serves as input for the reduce tasks.
 **Reduce**: The reduce function, also referred to as the reduce task, consists of taking all key/value pairs produced in the map phase that share the same intermediate key and producing zero, one, or more data items.
 
+<br />
+
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 Use the Pipfile to install packages in the virtualenv:
@@ -48,12 +50,14 @@ pipenv run test
 <br />
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-
-- [Pipenv](https://pipenv.pypa.io/en/latest/) | virtualenv and  packaging
-- [Pytest](https://docs.pytest.org/en/7.1.x/) | testing
+- [Python](https://www.python.org/) | Programming language
+- [Pipenv](https://pipenv.pypa.io/en/latest/) | Virtualenv and  packaging
+- [Pytest](https://docs.pytest.org/en/7.1.x/) | Testing
+- [Pre-Commit]() | Managing and maintaining hooks
+- [Github Actions](https://github.com/features/actions) | CI/CD
 
 <br />
 
-## ✍️ Authors <a name = "authors"></a>
+## ✏️ Authors <a name = "authors"></a>
 
 - [@vittoriopolverino](https://github.com/vittoriopolverino)
