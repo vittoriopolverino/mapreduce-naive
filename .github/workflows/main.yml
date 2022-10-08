@@ -47,6 +47,7 @@ jobs:
       - run: isort . --check --profile black --filter-files
 
   pytest:
+    needs: [black, flake8, isort]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
