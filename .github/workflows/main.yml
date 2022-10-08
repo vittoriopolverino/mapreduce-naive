@@ -11,5 +11,5 @@ jobs:
           python-version: '3.10'
           cache: 'pipenv '
       - run:
-          pip install black==22.3.0
+          pip install black==22.10.0
           black --check .
