@@ -15,11 +15,10 @@
 A naive implementation to better understand the **MapReduce** paradigm.
 
 MapReduce is a programming model for processing and generating big data sets with a parallel, distributed algorithm on a cluster.
-<br />
 The "MapReduce System" is usually composed of three functions (or steps):
-**Map**: The map function, also referred to as the map task, processes a single key/value input pair and produces a set of intermediate key/value pairs.
-**Shuffle**: The shuffle function transfer data from Mapper to Reducer. It is a mandatory operation for reducers to proceed their jobs further as the shuffling process serves as input for the reduce tasks.
-**Reduce**: The reduce function, also referred to as the reduce task, consists of taking all key/value pairs produced in the map phase that share the same intermediate key and producing zero, one, or more data items.
+- **Map**: The map function, also referred to as the map task, processes a single key/value input pair and produces a set of intermediate key/value pairs.
+- **Shuffle**: The shuffle function transfer data from Mapper to Reducer. It is a mandatory operation for reducers to proceed their jobs further as the shuffling process serves as input for the reduce tasks.
+- **Reduce**: The reduce function, also referred to as the reduce task, consists of taking all key/value pairs produced in the map phase that share the same intermediate key and producing zero, one, or more data items.
 
 <br />
 
