@@ -16,7 +16,7 @@ jobs:
 
       - run: black --check .
 
-  flak8:
+  flake8:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
