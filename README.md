@@ -1,4 +1,4 @@
-<h1 align="center">MapReduce Word Count</h2>
+<h1 align="center">MapReduce Word Count</h1>
 
 ## 📝 Table of Contents
 
@@ -12,19 +12,13 @@
 <br />
 
 ## 🧐 About <a name = "about"></a>
-
-A naive Word Count implementation to better understand the **MapReduce** paradigm.
-
-<br />
+A naive implementation to better understand the **MapReduce** paradigm.
 
 MapReduce is a programming model for processing and generating big data sets with a parallel, distributed algorithm on a cluster.
 
 The "MapReduce System" is usually composed of three functions (or steps):
-
 **Map**: The map function, also referred to as the map task, processes a single key/value input pair and produces a set of intermediate key/value pairs.
-
 **Shuffle**: The shuffle function transfer data from Mapper to Reducer. It is a mandatory operation for reducers to proceed their jobs further as the shuffling process serves as input for the reduce tasks.
-
 **Reduce**: The reduce function, also referred to as the reduce task, consists of taking all key/value pairs produced in the map phase that share the same intermediate key and producing zero, one, or more data items.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
@@ -46,7 +40,7 @@ pipenv run wordcount
 <br />
 
 ## 🐛 Test <a name = "deployment"></a>
-Run Unit and Integration Tests
+Run Unit and Integration tests
 ```
 pipenv run test
 ```
