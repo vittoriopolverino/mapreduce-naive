@@ -1,4 +1,4 @@
-from src.word_count import mapper, shuffler, reducer, map_reduce_naive
+from src.word_count import mapper, reducer, shuffler
 
 
 def test_map_reduce_naive(mock_input_data):
@@ -13,6 +13,5 @@ def test_map_reduce_naive(mock_input_data):
         ("cammin", 1),
         ("di", 1),
         ("nostra", 1),
-        ("vita", 1)
+        ("vita", 1),
     ]
-

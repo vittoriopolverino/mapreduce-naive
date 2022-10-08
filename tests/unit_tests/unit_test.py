@@ -1,4 +1,4 @@
-from src.word_count import mapper, shuffler, reducer
+from src.word_count import mapper, reducer, shuffler
 
 
 def test_mapper(mock_input_data):
@@ -12,7 +12,7 @@ def test_mapper(mock_input_data):
         ("di", 1),
         ("nostra", 1),
         ("vita", 1),
-        ("dante", 1)
+        ("dante", 1),
     ]
 
 
@@ -26,7 +26,7 @@ def test_shuffler(mock_mapped_data):
         "cammin": [1],
         "di": [1],
         "nostra": [1],
-        "vita": [1]
+        "vita": [1],
     }
 
 
@@ -45,5 +45,5 @@ def test_reducer(mock_shuffled_data):
         ("cammin", 1),
         ("di", 1),
         ("nostra", 1),
-        ("vita", 1)
+        ("vita", 1),
     ]
