@@ -7,8 +7,8 @@ A naive python implementation (no distributed computing) to mimic and understand
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Usage](#usage)
+- [Test](#test)
 - [Built Using](#built_using)
 - [Authors](#authors)
 
@@ -42,7 +42,7 @@ pipenv run wordcount
 
 <br />
 
-## 🐛 Test <a name = "deployment"></a>
+## 🐛 Test <a name = "test"></a>
 Run Unit and Integration tests
 ```
 pipenv run test
