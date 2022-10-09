@@ -1,9 +1,12 @@
 from collections import defaultdict
 
 
-def mapper(text: str) -> list[(str, int)]:
-    words = text.lower().split()
-    return list(map(lambda word: (word, 1), words))
+def splitter(text: str) -> list[str]:
+    return text.lower().split()
+
+
+def mapper(splitted_data: list[str]) -> list[(str, int)]:
+    return list(map(lambda word: (word, 1), splitted_data))
 
 
 def shuffler(mapped_data: list[(str, int)]) -> dict[str, list[int]]:
@@ -22,8 +25,7 @@ def reducer(shuffled_data: dict[str, list[int]]) -> list[(str, int)]:
 
 
 def map_reduce_naive(text: str) -> list[(str, int)]:
-    mapping_result = mapper(text=text)
-    # print(mapping_result)
+    split_result = splitter(text=text)
+    mapping_result = mapper(splitted_data=split_result)
     shuffling_result = shuffler(mapped_data=mapping_result)
-    # print(shuffling_result.items())
     return reducer(shuffled_data=shuffling_result)

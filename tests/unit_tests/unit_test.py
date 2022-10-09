@@ -1,8 +1,22 @@
-from src.word_count import mapper, reducer, shuffler
+from src.word_count import mapper, reducer, shuffler, splitter
 
 
-def test_mapper(mock_input_data):
-    mapping_result = mapper(text=mock_input_data)
+def test_splitter(mock_input_data):
+    assert splitter(text=mock_input_data) == [
+        "dante",
+        "nel",
+        "mezzo",
+        "del",
+        "cammin",
+        "di",
+        "nostra",
+        "vita",
+        "dante",
+    ]
+
+
+def test_mapper(mock_splitted_data):
+    mapping_result = mapper(splitted_data=mock_splitted_data)
     assert mapping_result == [
         ("dante", 1),
         ("nel", 1),

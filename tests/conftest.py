@@ -7,6 +7,11 @@ def mock_input_data():
 
 
 @pytest.fixture()
+def mock_splitted_data():
+    return ["dante", "nel", "mezzo", "del", "cammin", "di", "nostra", "vita", "dante"]
+
+
+@pytest.fixture()
 def mock_mapped_data():
     return [
         ("dante", 1),
