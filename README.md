@@ -1,5 +1,5 @@
 ## MapReduce Word Count
-A naive implementation to better understand the **MapReduce** paradigm.
+A naive python implementation (no distributed computing) to mimic and understand the **MapReduce** paradigm.
 
 <br />
 
