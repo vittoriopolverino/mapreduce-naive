@@ -4,11 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+clean-text = {extras = ["gpl"], version = "*"}
 
 [dev-packages]
 pytest = "*"
 pre-commit = "*"
 black = "*"
+clean-text = {extras = ["gpl"], version = "*"}
 
 [requires]
 python_version = "3.10"

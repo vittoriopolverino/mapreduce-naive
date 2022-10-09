@@ -1,8 +1,24 @@
 from collections import defaultdict
 
+from cleantext import clean
+
 
 def splitter(text: str) -> list[str]:
-    return text.lower().split()
+    # cleaning operations
+    return clean(
+        text,
+        fix_unicode=True,
+        to_ascii=True,
+        lower=True,
+        no_line_breaks=False,
+        no_urls=False,
+        no_emails=False,
+        no_phone_numbers=False,
+        no_numbers=False,
+        no_digits=False,
+        no_currency_symbols=False,
+        no_punct=True,
+    ).split()
 
 
 def mapper(splitted_data: list[str]) -> list[(str, int)]:
@@ -18,7 +34,6 @@ def shuffler(mapped_data: list[(str, int)]) -> dict[str, list[int]]:
 
 def reducer(shuffled_data: dict[str, list[int]]) -> list[(str, int)]:
     occurrences = [sum(occurrence) for word, occurrence in shuffled_data.items()]
-    # print(occurrences)
     return list(
         map(lambda word, occurrence: (word, occurrence), shuffled_data, occurrences)
     )

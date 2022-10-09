@@ -28,6 +28,7 @@ The "MapReduce System" is usually composed of three functions (or steps):
 Use the Pipfile to install packages in the virtualenv:
 
 ```
+pipenv install
 pipenv install --dev
 ```
 
@@ -55,6 +56,7 @@ pipenv run test
 - [Pytest](https://docs.pytest.org/en/7.1.x/) | Testing
 - [Pre-Commit]() | Managing and maintaining hooks
 - [Github Actions](https://github.com/features/actions) | CI/CD
+- [clean-text](https://github.com/jfilter/clean-text) | Text data cleaning
 
 <br />
 

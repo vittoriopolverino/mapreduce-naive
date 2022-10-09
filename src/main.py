@@ -15,8 +15,10 @@ if __name__ == "__main__":
     # get the start time
     st = time.time()
 
-    # descending sort based on the number of occurrences
+    # mapreduce output
     result = wdc.map_reduce_naive(text=file_text)
+
+    # descending sort based on the number of occurrences
     result.sort(key=operator.itemgetter(1), reverse=True)
 
     # get the end time
