@@ -52,7 +52,7 @@ pipenv run test
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [Python](https://www.python.org/) | Programming language
-- [Pipenv](https://pipenv.pypa.io/en/latest/) | Virtualenv and  packaging
+- [Pipenv](https://pipenv.pypa.io/en/latest/) | Dependency management
 - [Pytest](https://docs.pytest.org/en/7.1.x/) | Testing
 - [Pre-Commit]() | Managing and maintaining hooks
 - [Github Actions](https://github.com/features/actions) | CI/CD
