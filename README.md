@@ -56,7 +56,7 @@ pipenv run test
 - [Pytest](https://docs.pytest.org/en/7.1.x/) | Testing
 - [Pre-Commit]() | Managing and maintaining hooks
 - [Github Actions](https://github.com/features/actions) | CI/CD
-- [clean-text](https://github.com/jfilter/clean-text) | Text data cleaning
+- [clean-text](https://github.com/jfilter/clean-text) | Data cleaning
 
 <br />
 
